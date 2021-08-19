@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BOJ_1987_알파벳{
+public class BOJ_1987_알파벳 {
 	static int N,M;
 	static char[][] board;
 	static int[] dy = {-1, 0, 1, 0};
