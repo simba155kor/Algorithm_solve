@@ -13,7 +13,7 @@ public class boj_2606_virus {
 	static int N;
 	static int M;
 	static ArrayList<ArrayList<Integer>> Edge;
-	static boolean[] vis;
+	static boolean[] vis ;
 	
 	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub

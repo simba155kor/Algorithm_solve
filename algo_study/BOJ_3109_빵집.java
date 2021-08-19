@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BOJ_3109_빵집 {
+public class BOJ_3109_빵집  {
 	static int R, C;
 	static char[][] board;
 	static int[] dy = {-1, 0, 1};
