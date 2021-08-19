@@ -10,7 +10,7 @@ public class BOJ_3109_빵집 {
 	static char[][] board;
 	static int[] dy = {-1, 0, 1};
 	static int[] dx = { 1, 1, 1};
-	static int ans;
+	static int ans ;
 	
 	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
