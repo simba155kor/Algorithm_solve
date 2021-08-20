@@ -2,7 +2,7 @@ package zany1;
 
 import java.util.Scanner;
 
-public class BOJ_1074_Z {
+public class BOJ_1074_Z  {
 	
 	static int N,r,c;
 	static int cnt=0;
