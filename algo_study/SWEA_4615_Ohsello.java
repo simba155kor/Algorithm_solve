@@ -95,7 +95,6 @@ public class SWEA_4615_Ohsello {
 					
 					board[yy][xx] = val;
 				}
-				
 			}
 		}
 	}
