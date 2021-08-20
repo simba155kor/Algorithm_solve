@@ -90,7 +90,7 @@ public class SWEA_3234_준환이의양팔저울 {
 		}
 		
 		for(int a=0; a<N; a++)
-		{
+		{ 
 			if((val & 1<<a) !=0) continue;
 //			weight[now]= a;
 			perm2(now+1 , val | 1<<a, left_sum + board[a], right_sum);
