@@ -55,7 +55,7 @@ public class BOJ_2567_색종이2 {
 					if(board[yy][xx] == 0) ans++;
 					
 				}//d fd s
-			}
+			} 
 		}
 		
 		
