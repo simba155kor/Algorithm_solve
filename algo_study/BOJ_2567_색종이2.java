@@ -58,8 +58,6 @@ public class BOJ_2567_색종이2 {
 			} 
 		}
 		
-		
-		
 		System.out.println(ans);
 	}
 
