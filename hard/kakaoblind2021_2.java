@@ -8,6 +8,7 @@ class Solution {
 	static boolean[] check2;
 	static ArrayList<ArrayList<Integer>> ans;
 	
+
 	static int this_max=0;
 	
     public String[] solution(String[] orders, int[] courses)
