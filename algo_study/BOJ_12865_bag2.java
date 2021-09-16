@@ -1,3 +1,5 @@
+//중복이 없기 때문에 Top-down으로 해야됨
+
 package solve;
 
 import java.io.BufferedReader;
