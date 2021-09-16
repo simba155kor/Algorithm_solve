@@ -33,7 +33,7 @@ public class JungOL_1077_kanpsack {
 			value[a] = Integer.parseInt(st1.nextToken());
 		}
 		
-		
+		//1차원으로
 		for(int a=0; a<=w; a++)
 		{
 			for(int b=0; b<n; b++)
