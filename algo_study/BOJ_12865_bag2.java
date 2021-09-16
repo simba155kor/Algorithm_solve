@@ -1,4 +1,4 @@
-//ì¤‘ë³µì´ ì—†ê¸° ë•Œë¬¸ì— Top-downìœ¼ë¡œ í•´ì•¼ë¨
+//Áßº¹ÀÌ ¾ø±â ¶§¹®¿¡ Top-downÀ¸·Î ÇØ¾ßµÊ.
 
 package solve;
 
@@ -24,6 +24,7 @@ class infod1
 public class BOJ_12865_bag2 {
 	
 	static int[] D2;
+	//
 	
 	public static void main(String[] args) throws IOException{
 		// TODO Auto-generated method stub
