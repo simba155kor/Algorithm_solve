@@ -83,9 +83,7 @@ public class BOJ_7576_tomato {
 				
 			}
 			
-			
 		}
-		
 		
 		if(cnt1 != cnt2)
 		{
