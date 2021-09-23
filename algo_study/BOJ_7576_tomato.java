@@ -19,7 +19,7 @@ class yx1
 };
 
 public class BOJ_7576_tomato {
-	
+	 
 	static int n,m;
 	static int[][] board;
 	static int[][] vis;
