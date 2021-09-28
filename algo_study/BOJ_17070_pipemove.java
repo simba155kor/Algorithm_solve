@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 
 public class BOJ_17070_pipemove {
 	
-	static int n;
+	static int n; 
 	static int[][] board;
 	static int[][][] D;
 	
