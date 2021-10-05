@@ -5,13 +5,15 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class SWEA_5656_brick_break {
+public class SWEA_5656_brick_break2 {
 
 	static int n, w, h;
 	static int[][] board;
 	static int real_ans;
+	static int total;
+
 	
-	static int[] dy = {-1, 0, 1, 0};
+	static int[] dy = {-1, 0, 1, 0}; 
 	static int[] dx = {0, 1, 0, -1};
 	
 	public static void main(String[] args) throws IOException{
@@ -44,8 +46,9 @@ public class SWEA_5656_brick_break {
 				}
 			}
 			
+			total = real_ans;
 			
-			func(0);
+			func(0, 0);
 			
 			
 			System.out.println("#" + t + " " + real_ans);
@@ -54,18 +57,18 @@ public class SWEA_5656_brick_break {
 		
 	}
 	
-	static void func(int now)
+	static void func(int now, int cnt)
 	{
 		if(now==n)
 		{
-			int ans =0;
-			for(int a=0; a<h; a++)
-			{
-				for(int b=0; b<w; b++)
-				{
-					if(board[a][b] >0) ans++;
-				}
-			}
+			int ans = total - cnt;
+//			for(int a=0; a<h; a++)
+//			{
+//				for(int b=0; b<w; b++)
+//				{
+//					if(board[a][b] >0) ans++;
+//				}
+//			}
 			
 			if(real_ans > ans ) real_ans = ans;
 			
@@ -82,8 +85,8 @@ public class SWEA_5656_brick_break {
 				for(int b1=0; b1<w; b1++)
 					temp_board[a1][b1] = board[a1][b1];
 			
-			breaking(a);
-			func(now+1);
+			int temp = breaking(a);
+			func(now+1, cnt+temp);
 			
 			for(int a1=0; a1<h; a1++)
 				for(int b1=0; b1<w; b1++)
@@ -92,8 +95,9 @@ public class SWEA_5656_brick_break {
 		}
 	}
 	
-	static void breaking2(int y, int x)
+	static int breaking2(int y, int x)
 	{
+		int cnt=1;
 		int power1 = board[y][x];
 		
 		board[y][x] = 0;
@@ -111,7 +115,7 @@ public class SWEA_5656_brick_break {
 				
 				if(board[yy][xx]>0)
 				{
-					breaking2(yy, xx);
+					cnt += breaking2(yy, xx);
 				}
 				
 				board[yy][xx] = 0;
@@ -119,15 +123,18 @@ public class SWEA_5656_brick_break {
 			}
 		}
 		
+		return cnt;
 	}
 	
-	static void breaking(int where)
+	static int breaking(int where)
 	{
+		int cnt =0;
+		
 		for(int a=0; a<h; a++)
 		{
 			if(board[a][where] ==0) continue;
 			
-			breaking2(a, where);
+			cnt+=breaking2(a, where);
 			
 			break;
 		}
@@ -154,6 +161,7 @@ public class SWEA_5656_brick_break {
 			}
 		}
 		
+		return cnt;
 	}
 
 }
